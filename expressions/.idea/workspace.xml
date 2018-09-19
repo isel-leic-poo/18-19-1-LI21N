@@ -82,69 +82,23 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1176829113">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/edu/isel/adeetc/poo/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/edu/isel/adeetc/poo/ExpressionTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/edu/isel/adeetc/poo/Parser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-              <folding>
-                <element signature="method#opr#0;class#Parser#0" />
-                <element signature="method#getNextToken#0;class#Parser#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/isel/adeetc/poo/TokenHolder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/edu/isel/adeetc/poo/ParserTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/isel/adeetc/poo/Token.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+            <state relative-caret-position="180">
+              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -186,10 +140,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="230" />
-    <option name="y" value="197" />
-    <option name="width" value="1280" />
-    <option name="height" value="745" />
+    <option name="x" value="68" />
+    <option name="y" value="50" />
+    <option name="width" value="1529" />
+    <option name="height" value="898" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -197,40 +151,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="expressionsJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="expressionsJ" type="462c0819:PsiDirectoryNode" />
+              <item name="expressions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="expressions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="expressionsJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="expressionsJ" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="expressionsJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="expressionsJ" type="462c0819:PsiDirectoryNode" />
+              <item name="expressions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="expressions" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="expressionsJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="expressionsJ" type="462c0819:PsiDirectoryNode" />
+              <item name="expressions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="expressions" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="poo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="expressionsJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="expressionsJ" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="expressionsJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="expressionsJ" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
               <item name="poo" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -238,13 +174,15 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537302628957" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537380100172" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -268,83 +206,34 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+  <component name="RunManager" selected="Application.Run Main">
+    <configuration name="Run Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="edu.isel.adeetc.poo.Main" />
       <module name="expressions" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in expressions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Run all tests" type="JUnit" factoryName="JUnit">
       <module name="expressions" />
       <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ParserTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="expressions" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.isel.adeetc.poo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.isel.adeetc.poo" />
-      <option name="MAIN_CLASS_NAME" value="edu.isel.adeetc.poo.ParserTests" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ParserTests.testIsConstantReturnsTrueForValidConstant" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="expressions" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.isel.adeetc.poo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.isel.adeetc.poo" />
-      <option name="MAIN_CLASS_NAME" value="edu.isel.adeetc.poo.ParserTests" />
-      <option name="METHOD_NAME" value="testIsConstantReturnsTrueForValidConstant" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="edu.isel.adeetc.poo in expressions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="expressions" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.isel.adeetc.poo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.isel.adeetc.poo" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.All in expressions" />
-      <item itemvalue="JUnit.edu.isel.adeetc.poo in expressions" />
-      <item itemvalue="JUnit.ParserTests" />
-      <item itemvalue="JUnit.ParserTests.testIsConstantReturnsTrueForValidConstant" />
+      <item itemvalue="JUnit.Run all tests" />
+      <item itemvalue="Application.Run Main" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.ParserTests" />
-        <item itemvalue="JUnit.ParserTests.testIsConstantReturnsTrueForValidConstant" />
-        <item itemvalue="JUnit.edu.isel.adeetc.poo in expressions" />
-        <item itemvalue="JUnit.All in expressions" />
+        <item itemvalue="Application.Run Main" />
       </list>
     </recent_temporary>
   </component>
@@ -362,9 +251,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="edu_isel_adeetc_poo_in_expressions - 2018.09.18 at 18h 50m 16s.xml">
-      <configuration name="edu.isel.adeetc.poo in expressions" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="edu_isel_adeetc_poo_in_expressions - 2018.09.18 at 19h 02m 55s.xml">
       <configuration name="edu.isel.adeetc.poo in expressions" configurationId="JUnit" />
     </history-entry>
@@ -392,11 +278,14 @@
     <history-entry file="ParserTests - 2018.09.18 at 20h 14m 32s.xml">
       <configuration name="ParserTests" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_expressions - 2018.09.19 at 19h 00m 55s.xml">
+      <configuration name="All in expressions" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="230" y="197" width="1280" height="745" extended-state="0" />
+    <frame x="68" y="50" width="1529" height="898" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25201938" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2131809" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -405,7 +294,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4937107" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.49255583" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.6802935" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -483,23 +372,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/isel/adeetc/poo/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/edu/isel/adeetc/poo/ExpressionTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/isel/adeetc/poo/TokenHolder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -524,13 +396,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/isel/adeetc/poo/Expression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/isel/adeetc/poo/Parser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -539,6 +404,30 @@
             <element signature="method#opr#0;class#Parser#0" />
             <element signature="method#getNextToken#0;class#Parser#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/isel/adeetc/poo/Expression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/edu/isel/adeetc/poo/ExpressionTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/isel/adeetc/poo/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
         </state>
       </provider>
     </entry>
