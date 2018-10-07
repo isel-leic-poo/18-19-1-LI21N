@@ -27,9 +27,17 @@ public class ArrayList {
         size = elements.length;
     }
 
-    public int size() { return size; }
+    public int size() {
+        return size;
+    }
 
-    public int capacity() { return content.length; }
+    public boolean isEmpty() {
+        return size() == 0;
+    }
+
+    public int capacity() {
+        return content.length;
+    }
 
     public void addFirst(String elem) {
         if (elem == null)
@@ -81,5 +89,4 @@ public class ArrayList {
         content[--size] = null;
         return last;
     }
-
 }
