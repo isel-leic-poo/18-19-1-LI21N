@@ -12,7 +12,7 @@ public class Parser {
         if (token.token.charAt(0) == '0' && token.token.length() != 1)
             return null;
 
-        return new Expression(Integer.parseInt(token.token));
+        return new Constant(Integer.parseInt(token.token));
     }
 
     public static Expression expression(String expression, int startIndex, TokenHolder lastToken) {
@@ -48,7 +48,18 @@ public class Parser {
 
         Expression left = expression(expression, opr.indexEnd, lastToken);
         Expression right = expression(expression, lastToken.token.indexEnd, lastToken);
-        return new Expression(opr.token.charAt(0), left, right);
+        switch(opr.token.charAt(0)) {
+            case '+':
+                return new Addition(left, right);
+            case '-':
+                return new Subtraction(left, right);
+            case '*':
+                return new Multiplication(left, right);
+            case '/':
+                return new Division(left, right);
+            default:
+                throw new IllegalStateException();
+        }
     }
 
     public static Token getNextToken(String expression, int startIdx) {

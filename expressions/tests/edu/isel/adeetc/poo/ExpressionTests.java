@@ -10,7 +10,7 @@ public class ExpressionTests {
 
         // Arrange
         final int expectedValue = 5;
-        Expression sut = new Expression(expectedValue);
+        Expression sut = new Constant(expectedValue);
 
         // Act
         final int result = sut.evaluate();
@@ -24,7 +24,7 @@ public class ExpressionTests {
 
         // Arrange
         final int expectedValue = 10;
-        Expression sut = new Expression('+', new Expression(4), new Expression(6));
+        Expression sut = new Addition(new Constant(4), new Constant(6));
 
         // Act
         final int result = sut.evaluate();
