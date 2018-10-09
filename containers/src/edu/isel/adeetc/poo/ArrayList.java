@@ -1,6 +1,6 @@
 package edu.isel.adeetc.poo;
 
-public class ArrayList {
+public class ArrayList implements List {
     private String[] content;
     private int size;
 
@@ -27,10 +27,12 @@ public class ArrayList {
         size = elements.length;
     }
 
+    @Override
     public int size() {
         return size;
     }
 
+    @Override
     public boolean isEmpty() {
         return size() == 0;
     }
@@ -39,6 +41,7 @@ public class ArrayList {
         return content.length;
     }
 
+    @Override
     public void addFirst(String elem) {
         if (elem == null)
             throw new IllegalArgumentException();
@@ -47,6 +50,7 @@ public class ArrayList {
         content[0] = elem;
     }
 
+    @Override
     public void addLast(String elem) {
         if (elem == null)
             throw new IllegalArgumentException();
@@ -54,18 +58,21 @@ public class ArrayList {
         content[size++] = elem;
     }
 
+    @Override
     public String first() {
         if (size == 0)
             throw new IllegalStateException();
         return content[0];
     }
 
+    @Override
     public String last() {
         if (size == 0)
             throw new IllegalStateException();
         return content[size-1];
     }
 
+    @Override
     public String getAt(int index) {
         if (index >= size)
             throw new IllegalArgumentException();
@@ -73,6 +80,7 @@ public class ArrayList {
         return content[index];
     }
 
+    @Override
     public String removeFirst() {
         if (size == 0)
             throw new IllegalStateException();
@@ -82,6 +90,7 @@ public class ArrayList {
         return first;
     }
 
+    @Override
     public String removeLast() {
         if (size == 0)
             throw new IllegalStateException();

@@ -1,7 +1,7 @@
 package edu.isel.adeetc.poo;
 
 
-public class LinkedList {
+public class LinkedList implements List {
 
     private static class Node {
         public Node next;
@@ -32,14 +32,17 @@ public class LinkedList {
         }
     }
 
+    @Override
     public int size() {
         return size;
     }
 
+    @Override
     public boolean isEmpty() {
         return size() == 0;
     }
 
+    @Override
     public void addFirst(String elem) {
         if (elem == null)
             throw new IllegalArgumentException();
@@ -48,6 +51,7 @@ public class LinkedList {
         size += 1;
     }
 
+    @Override
     public String removeFirst() {
         if (isEmpty())
             throw new IllegalStateException();
@@ -58,6 +62,7 @@ public class LinkedList {
         return formerFirst.data;
     }
 
+    @Override
     public String first() {
         if (isEmpty())
             throw new IllegalStateException();
@@ -65,6 +70,7 @@ public class LinkedList {
         return head.data;
     }
 
+    @Override
     public String last() {
         if (isEmpty())
             throw new IllegalStateException();
@@ -76,6 +82,7 @@ public class LinkedList {
         return current.data;
     }
 
+    @Override
     public String getAt(int index) {
         if (index >= size)
             throw new IllegalArgumentException();
@@ -87,6 +94,7 @@ public class LinkedList {
         return current.data;
     }
 
+    @Override
     public void addLast(String elem) {
         if (elem == null)
             throw new IllegalArgumentException();
@@ -104,6 +112,7 @@ public class LinkedList {
         size += 1;
     }
 
+    @Override
     public String removeLast() {
         if (size == 0)
             throw new IllegalStateException();
