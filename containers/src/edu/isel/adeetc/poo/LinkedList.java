@@ -126,6 +126,7 @@ public class LinkedList implements List {
 
         final String last = current.next.data;
         current.next = null;
+        size -= 1;
         return last;
     }
 }
