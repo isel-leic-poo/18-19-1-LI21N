@@ -1,6 +1,10 @@
 package edu.isel.adeetc.poo;
 
+import java.util.Iterator;
+import java.util.NoSuchElementException;
+
 public class ArrayList implements List {
+
     private String[] content;
     private int size;
 
@@ -97,5 +101,25 @@ public class ArrayList implements List {
         final String last = last();
         content[--size] = null;
         return last;
+    }
+
+    @Override
+    public Iterator<String> iterator() {
+        return new Iterator<>() {
+
+            private int currIndex = 0;
+
+            @Override
+            public boolean hasNext() {
+                return currIndex != ArrayList.this.size;
+            }
+
+            @Override
+            public String next() {
+                if (!hasNext())
+                    throw new NoSuchElementException();
+                return ArrayList.this.getAt(currIndex++);
+            }
+        };
     }
 }

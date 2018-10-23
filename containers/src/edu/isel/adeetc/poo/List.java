@@ -1,6 +1,6 @@
 package edu.isel.adeetc.poo;
 
-public interface List {
+public interface List extends Iterable<String> {
     int size();
 
     boolean isEmpty();

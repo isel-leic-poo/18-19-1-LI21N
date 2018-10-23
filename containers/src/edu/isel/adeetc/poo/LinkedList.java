@@ -1,13 +1,16 @@
 package edu.isel.adeetc.poo;
 
 
+import java.util.Iterator;
+import java.util.NoSuchElementException;
+
 public class LinkedList implements List {
 
     private static class Node {
-        public Node next;
-        public final String data;
+        Node next;
+        final String data;
 
-        public Node(String elem, Node next) {
+        Node(String elem, Node next) {
             this.next = next;
             this.data = elem;
         }
@@ -20,6 +23,30 @@ public class LinkedList implements List {
             this(null, null);
         }
     }
+
+    @Override
+    public Iterator<String> iterator() {
+        return new Iterator<>() {
+
+            private Node current = head;
+
+            @Override
+            public boolean hasNext() {
+                return current != null;
+            }
+
+            @Override
+            public String next() {
+                if (!hasNext())
+                    throw new NoSuchElementException();
+
+                String elem = current.data;
+                current = current.next;
+                return elem;
+            }
+        };
+    }
+
 
     private int size = 0;
     private Node head = null;
