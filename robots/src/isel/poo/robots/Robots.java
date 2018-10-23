@@ -5,6 +5,7 @@ import isel.poo.console.Window;
 import isel.poo.console.tile.TilePanel;
 import isel.poo.robots.model.Arena;
 import isel.poo.robots.model.ParticipantsProvider;
+import isel.poo.robots.model.elements.Element;
 import isel.poo.robots.model.elements.JunkPile;
 import isel.poo.robots.model.elements.Player;
 import isel.poo.robots.model.elements.Robot;
@@ -12,6 +13,7 @@ import isel.poo.robots.model.providers.RandomPositionProvider;
 import isel.poo.robots.view.CellTile;
 
 import java.awt.event.KeyEvent;
+import java.util.Iterator;
 
 public class Robots {
 
@@ -36,13 +38,9 @@ public class Robots {
         window.setContent(arenaView);
         arenaView.center(height, width);
 
-        Player player = model.getPlayer();
-        arenaView.setTile(player.getY(), player.getX(), new CellTile(player));
-        for (Robot robot : model.getRobots()) {
-            arenaView.setTile(robot.getY(), robot.getX(), new CellTile(robot));
-        }
-        for (JunkPile pile : model.getJunkPiles()) {
-            arenaView.setTile(pile.getY(), pile.getX(), new CellTile(pile));
+        for (Element element: model) {
+            arenaView.setTile(
+                    element.getY(), element.getX(), new CellTile(element));
         }
 
         while(true) {
