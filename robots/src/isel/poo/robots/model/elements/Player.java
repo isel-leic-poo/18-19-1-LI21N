@@ -1,11 +1,12 @@
 package isel.poo.robots.model.elements;
 
+import isel.poo.robots.model.Direction;
 import isel.poo.robots.model.Position;
 
 /**
  * Class whose instances represent the player.
  */
-public class Player extends Element {
+public class Player extends Actor {
 
     /**
      * Initiates the player with the given coordinates.
@@ -24,6 +25,4 @@ public class Player extends Element {
     public Player(Position position) {
         super(position);
     }
-
-    // TODO
 }

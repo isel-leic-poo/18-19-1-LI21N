@@ -38,10 +38,10 @@ public class RandomPositionProvider implements ParticipantsProvider {
         return availablePositions.remove(random.nextInt(availablePositions.size()));
     }
 
-    private static List<Robot> generateRobots(int robotsCount, List<Position> availablePositions) {
+    private static List<Robot> generateRobots(int robotsCount, List<Position> availablePositions, Player target) {
         LinkedList<Robot> robots = new LinkedList<>();
         while (robotsCount-- > 0)
-            robots.add(new Robot(generatePosition(availablePositions)));
+            robots.add(new Robot(generatePosition(availablePositions), target));
         return robots;
     }
 
@@ -85,7 +85,7 @@ public class RandomPositionProvider implements ParticipantsProvider {
 
         List<Position> availablePositions = initializeAvailablePositions(xMax, yMax);
         player = generatePlayer(xMax, yMax, availablePositions);
-        robots = generateRobots(robotsCount, availablePositions);
+        robots = generateRobots(robotsCount, availablePositions, player);
         junkPiles = generateJunkPiles(junkPileCount, availablePositions);
     }
 

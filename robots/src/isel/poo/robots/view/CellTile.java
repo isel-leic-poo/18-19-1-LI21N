@@ -22,6 +22,7 @@ public class CellTile extends Tile {
     @Override
     public void paint() {
         super.paint();
+        Console.setBackground(Console.BLACK);
         if (element == null) printEmptyTile();
         else printElementTile();
     }
@@ -35,7 +36,6 @@ public class CellTile extends Tile {
         else if (element instanceof JunkPile)
             elementSymbol = '*';
 
-        Console.setBackground(color);
         print(0, 0, elementSymbol);
     }
 

@@ -10,31 +10,13 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Arena implements Iterable<Element> {
-
-    private static class ElementsIterator implements Iterator<Element> {
-
-        private final Iterator<Element> iterator;
-
-        ElementsIterator(List<Element> elements) {
-            this.iterator = elements.iterator();
-        }
-
-        @Override
-        public boolean hasNext() {
-            return iterator.hasNext();
-        }
-
-        @Override
-        public Element next() {
-            return iterator.next();
-        }
-    }
+public class Arena {
 
     private final Player player;
     private final List<JunkPile> junkPiles;
     private final List<Robot> robots;
-    private final List<Element> participants;
+
+    private Element[][] arena;
 
     private final int xUpperBound, yUpperBound;
 
@@ -44,15 +26,17 @@ public class Arena implements Iterable<Element> {
         this.junkPiles = provider.getJunkPiles();
         this.robots = provider.getRobots();
 
-        final List<Element> allElements = new LinkedList<>();
-        allElements.addAll(junkPiles);
-        allElements.addAll(robots);
-        allElements.add(player);
-
-        this.participants = allElements;
-
         this.xUpperBound = xUpperBound;
         this.yUpperBound = yUpperBound;
+
+        arena = new Element[xUpperBound][yUpperBound];
+        arena[player.getX()][player.getY()] = player;
+        for (Element element : junkPiles) {
+            arena[element.getX()][element.getY()] = element;
+        }
+        for (Element element : robots) {
+            arena[element.getX()][element.getY()] = element;
+        }
     }
 
     public Player getPlayer() {
@@ -67,8 +51,15 @@ public class Arena implements Iterable<Element> {
         return Collections.unmodifiableList(robots);
     }
 
-    @Override
-    public Iterator<Element> iterator() {
-        return new ElementsIterator(participants);
+    public void movePlayer(Direction direction) {
+        player.moveBy(direction);
+    }
+
+    public Element getElementAt(Position position) {
+        return arena[position.x][position.y];
+    }
+
+    public Element getElementAt(int line, int column) {
+        return getElementAt(new Position(column, line));
     }
 }
