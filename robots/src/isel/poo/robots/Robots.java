@@ -9,7 +9,6 @@ import isel.poo.robots.model.ParticipantsProvider;
 import isel.poo.robots.model.Position;
 import isel.poo.robots.model.elements.Actor;
 import isel.poo.robots.model.elements.Element;
-import isel.poo.robots.model.elements.Player;
 import isel.poo.robots.model.elements.Robot;
 import isel.poo.robots.model.providers.RandomPositionProvider;
 import isel.poo.robots.view.CellTile;

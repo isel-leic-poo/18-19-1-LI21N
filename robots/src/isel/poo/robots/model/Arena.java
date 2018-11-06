@@ -52,6 +52,7 @@ public class Arena {
     }
 
     public void movePlayer(Direction direction) {
+        // TODO: Change player position in matrix
         player.moveBy(direction);
     }
 
