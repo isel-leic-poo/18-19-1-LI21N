@@ -1,23 +1,51 @@
 package isel.adeetc.pdm.helloAndroid;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.Environment;
+import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.util.Scanner;
+
 public class MainActivity extends Activity {
 
-    private int counterValue = 0;
     private static final float MSG_TEXT_SIZE = 30, BUTTON_TEXT_SIZE = 30;
+    private Counter counter;
+    private TextView messageBox;
+    private MyCustomView customView;
 
+    private void updateView(int counterValue) {
+        messageBox.setText(Integer.toString(counterValue));
+        customView.setValue(counterValue);
+    }
+
+    @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        final TextView messageBox = new TextView(this);
-        messageBox.setText(Integer.toString(counterValue));
+        counter = new Counter();
+        counter.addChangeListener(new Counter.ChangeListener() {
+            @Override
+            public void counterValueChanged(Counter source, int newValue) {
+                updateView(newValue);
+            }
+        });
+
+        messageBox = new TextView(this);
         messageBox.setTextSize(MSG_TEXT_SIZE);
 
         final LinearLayout buttonPanel = new LinearLayout(this);
@@ -30,11 +58,9 @@ public class MainActivity extends Activity {
         plusButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                counterValue += 1;
-                messageBox.setText(Integer.toString(counterValue));
+                counter.increment();
             }
         });
-
 
         final Button minusButton = new Button(this);
         minusButton.setText("-");
@@ -42,8 +68,7 @@ public class MainActivity extends Activity {
         minusButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                counterValue -= 1;
-                messageBox.setText(Integer.toString(counterValue));
+                counter.decrement();
             }
         });
 
@@ -55,6 +80,24 @@ public class MainActivity extends Activity {
 
         rootPanel.addView(messageBox);
         rootPanel.addView(buttonPanel);
+
+        customView = new MyCustomView(this);
+        rootPanel.addView(customView);
+        updateView(counter.getValue());
+
+        customView.setOnSwipeListener(new MyCustomView.OnSwipeListener() {
+            @Override
+            public boolean onSwipeUp(View source) {
+                counter.increment();
+                return true;
+            }
+
+            @Override
+            public boolean onSwipeDown(View source) {
+                counter.decrement();
+                return true;
+            }
+        });
 
         setContentView(rootPanel);
     }
