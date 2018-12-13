@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Robots</string>
+    <string name="score_label">Score</string>
+</resources>
