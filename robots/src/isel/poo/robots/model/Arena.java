@@ -1,16 +1,13 @@
 package isel.poo.robots.model;
 
-import isel.poo.robots.model.elements.Element;
-import isel.poo.robots.model.elements.JunkPile;
-import isel.poo.robots.model.elements.Player;
-import isel.poo.robots.model.elements.Robot;
+import isel.poo.robots.model.elements.*;
 
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Arena {
+public class Arena implements World {
 
     private final Player player;
     private final List<JunkPile> junkPiles;
@@ -18,24 +15,36 @@ public class Arena {
 
     private Element[][] arena;
 
-    private final int xUpperBound, yUpperBound;
+    private final int xMax, yMax;
 
     public Arena(int xUpperBound, int yUpperBound, ParticipantsProvider provider) {
 
-        this.player = provider.getPlayer();
-        this.junkPiles = provider.getJunkPiles();
-        this.robots = provider.getRobots();
+        this.xMax = xUpperBound;
+        this.yMax = yUpperBound;
+        this.arena = new Element[xUpperBound][yUpperBound];
+        this.player = provider.getPlayer(this);
+        this.arena[player.getX()][player.getY()] = player;
 
-        this.xUpperBound = xUpperBound;
-        this.yUpperBound = yUpperBound;
+        Actor.StateChangeListener movementListener = new Actor.StateChangeListener() {
+            @Override
+            public void positionChanged(Actor source, Position oldPos, Position newPos) {
+                System.out.println(source.getClass().getSimpleName() + " moving from " + oldPos + " to " + newPos);
+                arena[oldPos.x][oldPos.y] = null;
+                arena[newPos.x][newPos.y] = source;
+            }
+        };
 
-        arena = new Element[xUpperBound][yUpperBound];
-        arena[player.getX()][player.getY()] = player;
+        this.player.addListener(movementListener);
+
+        this.junkPiles = provider.getJunkPiles(this);
+        this.robots = provider.getRobots(this);
+
         for (Element element : junkPiles) {
             arena[element.getX()][element.getY()] = element;
         }
-        for (Element element : robots) {
-            arena[element.getX()][element.getY()] = element;
+        for (Robot robot : robots) {
+            arena[robot.getX()][robot.getY()] = robot;
+            robot.addListener(movementListener);
         }
     }
 
@@ -52,15 +61,41 @@ public class Arena {
     }
 
     public void movePlayer(Direction direction) {
-        // TODO: Change player position in matrix
-        player.moveBy(direction);
+        if (player.canMoveBy(direction)) {
+            player.moveBy(direction);
+        }
     }
 
+    public void jumpPlayer() {
+        player.jump();
+    }
+
+    @Override
+    public boolean isValid(Position position) {
+        return position.x >= 0 && position.x < xMax && position.y >= 0 && position.y < yMax;
+    }
+
+    @Override
     public Element getElementAt(Position position) {
         return arena[position.x][position.y];
     }
 
+    @Override
     public Element getElementAt(int line, int column) {
         return getElementAt(new Position(column, line));
+    }
+
+    @Override
+    public int getMaxX() {
+        return xMax;
+    }
+
+    @Override
+    public int getMaxY() {
+        return yMax;
+    }
+
+    public boolean isGameOver() {
+        return player.isDead();
     }
 }

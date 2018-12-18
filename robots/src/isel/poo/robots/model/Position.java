@@ -1,7 +1,7 @@
 package isel.poo.robots.model;
 
 /**
- * Class whose instances represent the position of the participants. Coordinates must positive or zero.
+ * Class whose instances represent the position of the participants.
  */
 public final class Position {
 
@@ -13,9 +13,6 @@ public final class Position {
      * @param y the Y coordinate
      */
     public Position(int x, int y) {
-        if (x < 0 || y < 0)
-            throw new IllegalArgumentException();
-
         this.x = x;
         this.y = y;
     }

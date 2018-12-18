@@ -2,6 +2,7 @@ package isel.poo.robots.model.providers;
 
 import isel.poo.robots.model.ParticipantsProvider;
 import isel.poo.robots.model.Position;
+import isel.poo.robots.model.World;
 import isel.poo.robots.model.elements.JunkPile;
 import isel.poo.robots.model.elements.Player;
 import isel.poo.robots.model.elements.Robot;
@@ -16,12 +17,18 @@ import java.util.Random;
 public class RandomPositionProvider implements ParticipantsProvider {
 
     private static final Random random = new Random();
+    private final int xMax, yMax;
+    private final int junkPileCount, robotsCount;
+    private Player player;
+    private List<JunkPile> junkPiles;
+    private List<Robot> robots;
+    private List<Position> availablePositions;
 
-    private static Player generatePlayer(int xMax, int yMax, List<Position> availablePositions) {
+    private static Player generatePlayer(int xMax, int yMax, List<Position> availablePositions, World world) {
         // TODO: Get a safe zone and remove those positions from the list of available ones
         final Position playerPosition = new Position(xMax / 2, yMax / 2);
         availablePositions.remove(playerPosition);
-        return new Player(playerPosition);
+        return new Player(playerPosition, world);
     }
 
     private static List<Position> initializeAvailablePositions(int xMax, int yMax) {
@@ -38,10 +45,10 @@ public class RandomPositionProvider implements ParticipantsProvider {
         return availablePositions.remove(random.nextInt(availablePositions.size()));
     }
 
-    private static List<Robot> generateRobots(int robotsCount, List<Position> availablePositions, Player target) {
+    private static List<Robot> generateRobots(int robotsCount, List<Position> availablePositions, Player target, World world) {
         LinkedList<Robot> robots = new LinkedList<>();
         while (robotsCount-- > 0)
-            robots.add(new Robot(generatePosition(availablePositions), target));
+            robots.add(new Robot(generatePosition(availablePositions), target, world));
         return robots;
     }
 
@@ -51,10 +58,6 @@ public class RandomPositionProvider implements ParticipantsProvider {
             junk.add(new JunkPile(generatePosition(availablePositions)));
         return junk;
     }
-
-    private final Player player;
-    private final List<JunkPile> junkPiles;
-    private final List<Robot> robots;
 
     /**
      * Helper method used to verify if the random generation of the participants is possible with the given arguments.
@@ -80,27 +83,32 @@ public class RandomPositionProvider implements ParticipantsProvider {
      * @param robotsCount the initial number of robots.
      */
     public RandomPositionProvider(int xMax, int yMax, int junkPileCount, int robotsCount) {
-
         checkArgumentsSanity(xMax, yMax, junkPileCount, robotsCount);
-
-        List<Position> availablePositions = initializeAvailablePositions(xMax, yMax);
-        player = generatePlayer(xMax, yMax, availablePositions);
-        robots = generateRobots(robotsCount, availablePositions, player);
-        junkPiles = generateJunkPiles(junkPileCount, availablePositions);
+        this.xMax = xMax;
+        this.yMax = yMax;
+        this.junkPileCount = junkPileCount;
+        this.robotsCount = robotsCount;
+        this.availablePositions = initializeAvailablePositions(xMax, yMax);
     }
 
     @Override
-    public Player getPlayer() {
+    public Player getPlayer(World world) {
+        if (player == null)
+            player = generatePlayer(xMax, yMax, availablePositions, world);
         return player;
     }
 
     @Override
-    public List<JunkPile> getJunkPiles() {
+    public List<JunkPile> getJunkPiles(World world) {
+        if (junkPiles == null)
+            junkPiles = generateJunkPiles(junkPileCount, availablePositions);
         return junkPiles;
     }
 
     @Override
-    public List<Robot> getRobots() {
+    public List<Robot> getRobots(World world) {
+        if (robots == null)
+            robots = generateRobots(robotsCount, availablePositions, player, world);
         return robots;
     }
 }

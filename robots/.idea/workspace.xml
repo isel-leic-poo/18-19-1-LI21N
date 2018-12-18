@@ -2,16 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab031814-16fa-4106-97be-7f7fe8416058" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/isel/poo/robots/model/Direction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/isel/poo/robots/model/elements/Actor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RobotsAndroid/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RobotsAndroid/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../containers/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../containers/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloAndroid/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../helloAndroid/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloAndroid/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../helloAndroid/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/isel/poo/robots/Robots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/isel/poo/robots/Robots.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/isel/poo/robots/model/Arena.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/isel/poo/robots/model/Arena.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/isel/poo/robots/model/ParticipantsProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/isel/poo/robots/model/ParticipantsProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/isel/poo/robots/model/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/isel/poo/robots/model/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/isel/poo/robots/model/elements/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/isel/poo/robots/model/elements/Actor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/isel/poo/robots/model/elements/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/isel/poo/robots/model/elements/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/isel/poo/robots/model/elements/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/isel/poo/robots/model/elements/Robot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/isel/poo/robots/model/providers/RandomPositionProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/isel/poo/robots/model/providers/RandomPositionProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/isel/poo/robots/view/CellTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/isel/poo/robots/view/CellTile.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,55 +23,77 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="1380599832">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="21" />
-          <entry key="project.open.time.1" value="8" />
-          <entry key="project.open.time.10" value="2" />
-          <entry key="project.open.time.11" value="4" />
-          <entry key="project.open.time.13" value="2" />
-          <entry key="project.open.time.2" value="2" />
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="21" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="class" value="4" />
-          <entry key="html" value="2" />
-          <entry key="java" value="63" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CLASS" value="4" />
-          <entry key="HTML" value="2" />
-          <entry key="JAVA" value="63" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="11915" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="11915" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/isel/poo/robots/Robots.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="129">
+              <caret line="55" column="40" lean-forward="true" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/isel/poo/robots/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+              <folding>
+                <element signature="e#90#91#0" expanded="true" />
+                <element signature="e#124#125#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/isel/poo/robots/model/elements/Robot.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/isel/poo/robots/model/Arena.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/isel/poo/robots/model/ParticipantsProvider.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/isel/poo/robots/model/providers/RandomPositionProvider.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1260">
+              <caret line="93" selection-start-line="93" selection-end-line="93" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/isel/poo/robots/model/elements/Actor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1335">
+              <caret line="97" column="20" selection-start-line="97" selection-start-column="20" selection-end-line="97" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,8 +107,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -102,29 +127,30 @@
         <option value="$PROJECT_DIR$/src/isel/poo/robots/model/Element.java" />
         <option value="$PROJECT_DIR$/src/isel/poo/robots/RandomArenaFactory.java" />
         <option value="$PROJECT_DIR$/src/isel/poo/robots/model/ElementFactory.java" />
-        <option value="$PROJECT_DIR$/src/isel/poo/robots/model/ParticipantsProvider.java" />
         <option value="$PROJECT_DIR$/src/isel/poo/robots/model/elements/Element.java" />
         <option value="$PROJECT_DIR$/src/isel/poo/robots/model/elements/JunkPile.java" />
-        <option value="$PROJECT_DIR$/src/isel/poo/robots/model/Position.java" />
         <option value="$PROJECT_DIR$/src/isel/poo/robots/view/Tile.java" />
         <option value="$PROJECT_DIR$/src/isel/poo/robots/Main.java" />
         <option value="$PROJECT_DIR$/src/isel/poo/console/tile/Tile.java" />
         <option value="$PROJECT_DIR$/src/isel/poo/robots/view/CellTile.java" />
-        <option value="$PROJECT_DIR$/src/isel/poo/robots/model/Arena.java" />
-        <option value="$PROJECT_DIR$/src/isel/poo/robots/model/elements/Player.java" />
-        <option value="$PROJECT_DIR$/src/isel/poo/robots/model/providers/RandomPositionProvider.java" />
         <option value="$PROJECT_DIR$/src/isel/poo/robots/model/Direction.java" />
-        <option value="$PROJECT_DIR$/src/isel/poo/robots/model/elements/Actor.java" />
-        <option value="$PROJECT_DIR$/src/isel/poo/robots/model/elements/Robot.java" />
+        <option value="$PROJECT_DIR$/src/isel/poo/robots/DirectionKeyMap.java" />
+        <option value="$PROJECT_DIR$/src/isel/poo/robots/model/Position.java" />
+        <option value="$PROJECT_DIR$/src/isel/poo/robots/model/World.java" />
         <option value="$PROJECT_DIR$/src/isel/poo/robots/Robots.java" />
+        <option value="$PROJECT_DIR$/src/isel/poo/robots/model/elements/Actor.java" />
+        <option value="$PROJECT_DIR$/src/isel/poo/robots/model/elements/Player.java" />
+        <option value="$PROJECT_DIR$/src/isel/poo/robots/model/elements/Robot.java" />
+        <option value="$PROJECT_DIR$/src/isel/poo/robots/model/ParticipantsProvider.java" />
+        <option value="$PROJECT_DIR$/src/isel/poo/robots/model/providers/RandomPositionProvider.java" />
+        <option value="$PROJECT_DIR$/src/isel/poo/robots/model/Arena.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="104" />
-    <option name="y" value="88" />
-    <option name="width" value="1392" />
-    <option name="height" value="954" />
+    <option name="y" value="23" />
+    <option name="width" value="1920" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -132,6 +158,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -160,13 +188,6 @@
               <item name="robots" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="poo" type="462c0819:PsiDirectoryNode" />
-              <item name="console" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="robots" type="b2602c69:ProjectViewProjectNode" />
-              <item name="robots" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="poo" type="462c0819:PsiDirectoryNode" />
               <item name="robots" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -188,18 +209,24 @@
             </path>
             <path>
               <item name="robots" type="b2602c69:ProjectViewProjectNode" />
+              <item name="robots" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="poo" type="462c0819:PsiDirectoryNode" />
+              <item name="robots" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="robots" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540983418795" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545154786935" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -260,10 +287,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="104" y="88" width="1392" height="954" extended-state="0" />
+    <frame x="0" y="23" width="1920" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27333334" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.28716904" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -272,15 +299,16 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32704404" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3721174" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35025907" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3708029" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329927" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.329927" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32809225" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3270073" />
+      <window_info anchor="right" id="Maven" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -290,9 +318,6 @@
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" />
     </layout>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/edu/isel/adeetc/poo/Actor.java" />
@@ -311,13 +336,6 @@
     </entry>
     <entry file="jar://$PROJECT_DIR$/libs/ConsolePG.jar!/docs/isel/leic/pg/Console.html">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/lib/src.zip!/java.base/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3945">
-          <caret line="286" column="12" selection-start-line="286" selection-start-column="12" selection-end-line="286" selection-end-column="12" />
-        </state>
-      </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -354,17 +372,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/isel/poo/robots/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#90#91#0" expanded="true" />
-            <element signature="e#124#125#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/isel/poo/console/tile/Tile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="377">
@@ -376,9 +383,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="149" selection-start-line="149" selection-end-line="149" />
-          <folding>
-            <element signature="e#5215#5216#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -386,17 +390,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-          <folding>
-            <element signature="e#1247#1248#0" expanded="true" />
-            <element signature="e#1281#1282#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/isel/poo/robots/model/elements/Element.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -407,16 +400,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/lib/src.zip!/java.desktop/java/awt/event/KeyEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="400" column="28" selection-start-line="400" selection-start-column="28" selection-end-line="400" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/isel/poo/robots/model/elements/Element.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-38">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/isel/poo/robots/DirectionKeyMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/isel/poo/robots/model/Position.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        <state relative-caret-position="35">
+          <caret line="3" column="68" selection-start-line="3" selection-start-column="68" selection-end-line="3" selection-end-column="68" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/isel/poo/robots/view/CellTile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
+        <state relative-caret-position="540">
           <caret line="38" selection-start-line="38" selection-end-line="38" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -424,63 +441,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/isel/poo/robots/model/Arena.java">
+    <entry file="file://$PROJECT_DIR$/src/isel/poo/robots/model/World.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="45" column="33" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+        <state relative-caret-position="410">
+          <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/isel/poo/robots/model/ParticipantsProvider.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/lib/src.zip!/java.base/java/util/List.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        <state relative-caret-position="438">
+          <caret line="263" column="12" selection-start-line="263" selection-start-column="12" selection-end-line="263" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/isel/poo/robots/model/elements/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="211">
+          <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1986#1987#0" expanded="true" />
+            <element signature="e#2017#2018#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/isel/poo/robots/model/Arena.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/isel/poo/robots/model/providers/RandomPositionProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1185">
-          <caret line="87" column="71" selection-start-line="87" selection-start-column="71" selection-end-line="87" selection-end-column="71" />
+        <state relative-caret-position="1260">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/isel/poo/robots/model/elements/Actor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="1335">
+          <caret line="97" column="20" selection-start-line="97" selection-start-column="20" selection-end-line="97" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#930#931#0" expanded="true" />
-            <element signature="e#988#989#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/isel/poo/robots/model/elements/Robot.java">
+    <entry file="file://$PROJECT_DIR$/src/isel/poo/robots/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="75">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#90#91#0" expanded="true" />
+            <element signature="e#124#125#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/isel/poo/robots/Robots.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="129">
+          <caret line="55" column="40" lean-forward="true" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/isel/poo/robots/model/ParticipantsProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/isel/poo/robots/model/elements/Robot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

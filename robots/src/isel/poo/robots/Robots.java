@@ -22,6 +22,7 @@ public class Robots {
     private final int width, height;
     private final Arena model;
     private final Window window;
+    private final DirectionKeyMap keyMap;
 
     public Robots() {
         width = WINDOW_WIDTH - 4;
@@ -30,6 +31,7 @@ public class Robots {
         window.clear();
         final ParticipantsProvider provider = new RandomPositionProvider(width, height, 0, 1);
         model = new Arena(width, height, provider);
+        keyMap = new DirectionKeyMap();
     }
 
     public void run() {
@@ -51,40 +53,27 @@ public class Robots {
             int key = Console.waitKeyPressed(0);
             Direction direction = null;
             switch (key) {
-                case KeyEvent.VK_W:
-                    direction = Direction.N;
-                    break;
-                case KeyEvent.VK_Q:
-                    direction = Direction.NW;
-                    break;
-                case KeyEvent.VK_A:
-                    direction = Direction.W;
-                    break;
-                case KeyEvent.VK_Z:
-                    direction = Direction.SW;
-                    break;
-                case KeyEvent.VK_X:
-                    direction = Direction.S;
-                    break;
-                case KeyEvent.VK_C:
-                    direction = Direction.SE;
-                    break;
-                case KeyEvent.VK_D:
-                    direction = Direction.E;
-                    break;
-                case KeyEvent.VK_E:
-                    direction = Direction.NE;
-                    break;
                 case KeyEvent.VK_ESCAPE:
                     window.close();
                     return;
+                case KeyEvent.VK_S:
+                    model.jumpPlayer();
+                    break;
+                default:
+                    direction = keyMap.getDirection(key);
+                    break;
             }
 
             Console.waitKeyReleased(key);
 
-            if (direction != null)
+            if (direction != null) {
                 model.movePlayer(direction);
-
+                if (model.isGameOver()) {
+                    System.out.println("Game Over");
+                    window.close();
+                    return;
+                }
+            }
         }
     }
 

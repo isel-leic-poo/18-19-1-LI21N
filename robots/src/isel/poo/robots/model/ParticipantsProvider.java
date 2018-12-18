@@ -12,21 +12,24 @@ import java.util.List;
 public interface ParticipantsProvider {
 
     /**
-     * Gets the player instance at its initial position.
+     * Gets the player instance at its initial position on the given world.
+     * @param world the world where the player will live in.
      * @return the player instance
      */
-    Player getPlayer();
+    Player getPlayer(World world);
 
     /**
-     * Gets the list of initial junk piles.
+     * Gets the list of initial junk piles on the given world
+     * @param world the world where the junk piles will exist.
      * @return the list of junk piles.
      */
-    List<JunkPile> getJunkPiles();
+    List<JunkPile> getJunkPiles(World world);
 
     /**
      * Gets the list of initial robots.
+     * @param world the world where the robots will exist.
      * @return the list of robots.
      */
-    List<Robot> getRobots();
+    List<Robot> getRobots(World world);
 }
 
